@@ -1,0 +1,80 @@
+{
+	"name": "REDCap Christmas Mode",
+	"namespace": "Vanderbilt\\REDCapChristmasModeExternalModule",
+	"description": "Brings festive Christmas cheer to REDCap with holiday-themed styling, animations, and interactive features. Transform your data collection into a winter wonderland!",
+	"documentation": "README.md",
+	"authors": [
+		{
+			"name": "Byungsuk Choi",
+			"email": "byungsuk.choi@vumc.org",
+			"institution": "Vanderbilt University Medical Center"
+		}
+	],
+	"versions": {
+		"1.0.0": "Initial release of REDCap Christmas Mode."
+	},
+	"enable-every-page-hooks-on-system-pages": true,
+	"framework-version": 15,
+	"project-settings": [
+		{
+			"key": "enable-snow-animation",
+			"name": "Enable falling snow animation",
+			"required": false,
+			"type": "checkbox"
+		},
+		{
+			"key": "color-scheme",
+			"name": "Christmas color scheme",
+			"required": false,
+			"type": "dropdown",
+			"choices": [
+				{
+					"value": "traditional",
+					"name": "Traditional (Classic red and green)"
+				},
+				{
+					"value": "accessible",
+					"name": "Accessibility-friendly (Blue and green)"
+				}
+			]
+		}
+	],
+	"system-settings": [
+		{
+			"key": "enable-christmas-mode-global",
+			"name": "Enable Christmas Mode globally for all REDCap pages",
+			"required": false,
+			"type": "checkbox"
+		},
+		{
+			"key": "allow-user-toggle",
+			"name": "Allow users to toggle Christmas mode on/off",
+			"required": false,
+			"type": "checkbox"
+		},
+		{
+			"key": "christmas-theme-intensity",
+			"name": "Christmas theme intensity",
+			"required": false,
+			"type": "dropdown",
+			"choices": [
+				{
+					"value": "subtle",
+					"name": "Subtle (Light festive touches)"
+				},
+				{
+					"value": "moderate",
+					"name": "Moderate (Balanced holiday spirit)"
+				},
+				{
+					"value": "festive",
+					"name": "Festive (Full Christmas experience)"
+				}
+			]
+		}
+	],
+	"compatibility": {
+		"php-version-min": "5.6.0",
+		"redcap-version-min": "8.0.0"
+	}
+}
