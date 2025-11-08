@@ -115,6 +115,8 @@ For questions, bug reports, or feature requests, please contact your REDCap admi
 
 ## License
 
+This module is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
 This module is provided as-is for educational and festive purposes. Merry Christmas! 🎄
 
 ---
